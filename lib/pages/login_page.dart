@@ -80,7 +80,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  _onClickLogin() {
+  void _onClickLogin() {
     String login = _tLogin.text;
     String senha = _tSenha.text;
 
