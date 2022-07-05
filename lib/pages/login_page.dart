@@ -4,6 +4,8 @@ class LoginPage extends StatelessWidget {
   final _tLogin = TextEditingController();
   final _tSenha = TextEditingController();
 
+  const LoginPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +32,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  _text(String label, String hint, {bool password = false, TextEditingController controller}) {
+  _text(String label, String hint, {bool password = false, TextEditingController? controller}) {
     return TextFormField(
       controller: controller,
       obscureText: password,
@@ -55,7 +57,7 @@ class LoginPage extends StatelessWidget {
   _button(String text, Function onPressed) {
     return Container(
       height: 46,
-      child: RaisedButton(
+      child: ElevatedButton(
         color: Colors.blue,
         child: Text(
           text,
@@ -73,6 +75,7 @@ class LoginPage extends StatelessWidget {
     String login = _tLogin.text;
     String senha = _tSenha.text;
 
+    // ignore: avoid_print
     print("Login: $login, Senha: $senha");
   }
 }
