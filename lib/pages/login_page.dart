@@ -29,7 +29,9 @@ class LoginPage extends StatelessWidget {
           _text("Senha", "Digite o Senha", password: true, controller: _tSenha),
           // ignore: prefer_const_constructors
           SizedBox(height: 20),
-          _button("Login", _onClickLogin),
+          _button("Login", () {
+            _onClickLogin();
+          }),
         ],
       ),
     );
@@ -80,7 +82,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  Future<void> _onClickLogin() async {
+  _onClickLogin() {
     String login = _tLogin.text;
     String senha = _tSenha.text;
 
