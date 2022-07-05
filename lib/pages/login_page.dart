@@ -61,8 +61,10 @@ class LoginPage extends StatelessWidget {
   }
 
   _button(String text, Function onPressed) {
+    // ignore: sized_box_for_whitespace
     return Container(
       height: 46,
+      // ignore: deprecated_member_use
       child: RaisedButton(
         color: Colors.blue,
         child: Text(
