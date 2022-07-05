@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,6 +30,7 @@ _body() {
 
 _text(String label, String hint, {bool password = false}) {
   return TextFormField(
+    controller: _tLogin,
     obscureText: password,
     style: TextStyle(
       fontSize: 20,
@@ -67,4 +66,3 @@ _button(String text) {
     ),
   );
 }
-
