@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: use_key_in_widget_constructors
 class LoginPage extends StatelessWidget {
   final _tLogin = TextEditingController();
   final _tSenha = TextEditingController();
@@ -34,7 +35,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  _text(String label, String hint, {bool password = false, TextEditingController controller}) {
+  _text(String label, String hint, {bool password = false, required TextEditingController controller}) {
     return TextFormField(
       controller: controller,
       obscureText: password,
@@ -81,6 +82,7 @@ class LoginPage extends StatelessWidget {
     String login = _tLogin.text;
     String senha = _tSenha.text;
 
+    // ignore: avoid_print
     print("Login: $login, Senha: $senha");
   }
 }
