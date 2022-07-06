@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
+// ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
