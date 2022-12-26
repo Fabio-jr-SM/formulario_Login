@@ -1,6 +1,6 @@
 # Formulário Login - Flutter
 
-<img src="./formulario_Login/lib/img/Login-fluter.png"></img>
+<img src="/formulario_Login/lib/img/Login-fluter.png"></img>
 
 A new Flutter project created with https://flutlab.io
 
